@@ -1,1 +1,1 @@
-# narademy
+# Copyright to Narademy.com
