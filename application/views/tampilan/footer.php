@@ -9,20 +9,18 @@
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              First of all, let us introduce ourself. What are we? and what benefits can you get by become our member?
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> New method for learning new skill and become pro easily.</li>
+              <li><i class="ri-check-double-line"></i> Sharing your knowledge, and get promoted in all our platforms.</li>
+              <li><i class="ri-check-double-line"></i> Get certificate after completing every courses.</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              Narademy stands for Nara Academy which provide education for all levels especially in IT Field. Narademy is not just about learning but it allows people to share their knowledge to the others, so they can grow together.
+              We Learn, Grow and achieve our dreams together.
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
           </div>
@@ -44,11 +42,11 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="asset/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="asset/img/team/haekal.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Haekal Sastradilaga</h4>
                 <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -59,13 +57,13 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="asset/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="asset/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Nada Rahmawati</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <span>Chief Executive Officer</span>
+                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -76,13 +74,13 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4">
+          <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
               <div class="pic"><img src="asset/img/team/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Andhika Prasetya</h4>
                 <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -93,13 +91,30 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4">
+          <div class="col-lg-4 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="asset/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Fauzan</h4>
+                <span>CTO</span>
+                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
               <div class="pic"><img src="asset/img/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Fariz Darmawan</h4>
                 <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -159,7 +174,7 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <p>Follow us in our social media to get notified about our updates.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
