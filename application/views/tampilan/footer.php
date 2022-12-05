@@ -63,7 +63,7 @@
               <div class="member-info">
                 <h4>Nada Rahmawati</h4>
                 <span>Chief Executive Officer</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <p>When life gets you down, do you wanna know what you've gotta do? Just keep swimming-dory.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
