@@ -59,11 +59,11 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="asset/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="asset/img/team/nada1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Nada Rahmawati</h4>
                 <span>Chief Executive Officer</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <p>When life gets you down, do you wanna know what you've gotta do? Just keep swimming-dory.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
