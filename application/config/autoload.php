@@ -89,7 +89,6 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-//$autoload['helper'] = array('url', 'file', 'pustaka');
 
 /*
 | -------------------------------------------------------------------
@@ -132,3 +131,5 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
+$autoload['helper'] = array('url');
+$autoload['libraries'] = array('database'); 

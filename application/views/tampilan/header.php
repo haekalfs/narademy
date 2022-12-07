@@ -41,29 +41,28 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="<?= site_url('home') ?>">Home</a></li>
+          <li><a class="nav-link scrollto" href="<?= site_url('about') ?>">About</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
           <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Programming</a></li>
+              <li><a href="<?= site_url('programming') ?>">Programming</a></li>
               <li class="dropdown"><a href="#"><span>SAP ERP</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">SAP CRM</a></li>
-                  <li><a href="#">SAP HCM</a></li>
-                  <li><a href="#">SAP FI and CO</a></li>
-                  <li><a href="#">SAP BASIS</a></li>
-                  <li><a href="#">SAP PM/PS</a></li>
+                  <li><a href="<?= site_url('sap') ?>">SAP CRM</a></li>
+                  <li><a href="<?= site_url('sap') ?>">SAP HCM</a></li>
+                  <li><a href="<?= site_url('sap') ?>">SAP FI and CO</a></li>
+                  <li><a href="<?= site_url('sap') ?>">SAP BASIS</a></li>
+                  <li><a href="<?= site_url('sap') ?>">SAP PM/PS</a></li>
                 </ul>
               </li>
-              <li><a href="#">Linux Infrastructure</a></li>
-              <li><a href="#">Data Analytics</a></li>
-              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="<?= site_url('linux') ?>">Linux Infrastructure</a></li>
+              <li><a href="<?= site_url('data-analytics') ?>">Data Analytics</a></li>
+              <li><a href="<?= site_url('digmar') ?>">Digital Marketing</a></li>
             </ul>
           </li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Blogs</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="getstarted scrollto" href="#about">Join Us</a></li>
+          <li><a class="getstarted scrollto" href="<?= site_url('Login') ?>">Join Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
