@@ -11,16 +11,25 @@ class Course extends CI_Controller
 
   public function index()
   {
-    // ambil artikel yang statusnya bukan draft
-    $data['courses'] = $this->course_model->get_published();
-    $data['floc'] = [
-      'title' => "Browse All Courses",
-    ];
-    if (count($data['courses']) > 0) {
-      // kirim data artikel ke view
+    $this->load->library('pagination');
+  
+    $config['base_url'] = site_url('/course');
+    $config['page_query_string'] = TRUE;
+    $config['total_rows'] = $this->course_model->get_published_count();
+    $config['per_page'] = 4;
+  
+    $config['full_tag_open'] = '<div class="pagination">';
+    $config['full_tag_close'] = '</div>';
+
+    $this->pagination->initialize($config);
+    $limit = $config['per_page'];
+    $offset = html_escape($this->input->get('per_page'));
+  
+    $data['courses'] = $this->course_model->get_published($limit, $offset);
+  
+    if(count($data['courses']) > 0){
       $this->load->view('courses/list_courses.php', $data);
     } else {
-      // kalau gak ada artikel, tampilkan view ini
       $this->load->view('courses/empty_courses.php');
     }
   }

@@ -138,8 +138,8 @@
               <div class="pic"><img src="asset/img/team/haekal.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Haekal Sastradilaga</h4>
-                <span>Chief Executive Officer</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <span>19210677</span>
+                <p>Sayangi ibumu jangan ibu-ibu dengan bekerja hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -155,7 +155,7 @@
               <div class="pic"><img src="asset/img/team/nada1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Nada Rahmawati</h4>
-                <span>Chief Executive Officer</span>
+                <span>19211226</span>
                 <p>When life gets you down, do you wanna know what you've gotta do? Just keep swimming-dory.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -169,11 +169,11 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="asset/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="asset/img/team/dhika.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Andhika Prasetya</h4>
-                <span>CTO</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <span>19210748</span>
+                <p>With a great power, comes a great responsibility.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -186,11 +186,11 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="asset/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="asset/img/team/fauzan.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Fauzan</h4>
-                <span>CTO</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <span>19211304</span>
+                <p>Bangun, Main PS, Kuliah, Push Rank. Itu cyclenya.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -203,11 +203,11 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="asset/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="asset/img/team/fariz.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Fariz Darmawan</h4>
-                <span>Accountant</span>
-                <p>Sayangi ibumu jangan ibu-ibu, bekerjalah hingga tulang anda keropos.</p>
+                <span>19211101</span>
+                <p>Sehat tidak perlu, yang penting joki lancar, cuan pun datang.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>

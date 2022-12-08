@@ -36,6 +36,7 @@
 		</div>
       </div>
     </section><!-- End Services Section -->
+    <?=  $this->pagination->create_links(); ?>
 
 	<?php $this->load->view('_partials/footer.php'); ?>
 </body>

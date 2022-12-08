@@ -133,3 +133,5 @@ $autoload['language'] = array();
 */
 $autoload['helper'] = array('url');
 $autoload['libraries'] = array('database'); 
+$autoload['libraries'] = array('database', 'session');
+$autoload['helper'] = array('url', 'gravatar');
