@@ -58,32 +58,32 @@
                             <div class="column">
                                 <img src="assets/slide01.jpg" alt="Avatar" style="width:100%">
                                 <div class="card">
-                                    <h4>Hiring Databases</h4>
-                                    <p>A recruitment database is a searchable repository of your jobs, contacts, applications, candidates, notes, and communications for easy access and reuse.These systems may help for HR.</p>
+                                    <h4>What's Narademy?</h4>
+                                    <p>Narademy is website education. Narademy is not just about learning but it allows people to share their knowledge to the others, so they can grow together.</p>
                                 </div>
                             </div>
 
                             <div class="column">
                             <img src="assets/slide02.png" alt="Avatar" style="width:100%">
                                 <div class="card">
-                                <h3>HRM Tools</h3>
-                                <p>Human resource management is the strategic approach to the effective and efficient management of people in a company or organization such that they help their business gain a competitive advantage.</p>
+                                <h3>Know Yourself</h3>
+                                <p>Don't aim to be understood by others before you understand yourself. People may never understand your intentions. You know them.</p>
                                 </div>
                             </div>
                             
                             <div class="column">
                             <img src="assets/slide03.png" alt="Avatar" style="width:100%">
                                 <div class="card">
-                                <h4>Employees Tracking</h4>
-                                <p>Employee tracking or personnel management, is any system used to keep track of time card and office location information of employees. These systems may help to keep track of working hours</p>
+                                <h4>Black Roses</h4>
+                                <p>If you are not enough for yourself you will never be enough for someone else.</p>
                                 </div>
                             </div>
                             
                             <div class="column">
                             <img src="assets/slide04.png" alt="Avatar" style="width:100%">
                                 <div class="card">
-                                <h3>Log Report</h3>
-                                <p>Use the Reports and Logs page to view Provisioning Gateway events. You can view events by date ranges and filter events by type.These systems may help to gathering information from the system.</p>
+                                <h3>Be True</h3>
+                                <p>If you don't stop judging yourself, putting yourself down, believing that this is as good as you can be, then you've closed doors for yourself before they even appear in front of you.</p>
                                 </div>
                             </div>
                         </div>

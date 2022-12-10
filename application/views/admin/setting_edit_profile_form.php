@@ -54,10 +54,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-6">
-						<h4>Edit Profile</h4>
-						<p class="lead">Edit Your Profile.</p>
-					</div>
 				</div>
 			</div>
 			<?php $this->load->view('admin/_partials/footer.php') ?>
