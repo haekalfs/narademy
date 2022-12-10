@@ -30,7 +30,7 @@ CREATE TABLE `usr_posts` (
   `post_title` int NOT NULL,
   `post_status` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
