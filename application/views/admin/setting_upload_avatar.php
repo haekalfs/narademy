@@ -18,7 +18,7 @@
                     </ol>
 
 			
-			<div class="row">
+					<div class="row">
                           <div class="col-xl-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
@@ -46,7 +46,7 @@
                                 <h4>Upload Avatar</h4><p class="lead">Upload Your Avatar.</p>
                             </div>
                         </div>
-				</div>
+			</div>
 			<?php $this->load->view('admin/_partials/footer.php') ?>
 		</div>
 	</main>
