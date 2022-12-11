@@ -74,7 +74,7 @@
                             <div class="column">
                             <img src="assets/slide03.png" alt="Avatar" style="width:100%">
                                 <div class="card">
-                                <h4>Black Roses</h4>
+                                <h4>Pink Roses</h4>
                                 <p>If you are not enough for yourself you will never be enough for someone else.</p>
                                 </div>
                             </div>
