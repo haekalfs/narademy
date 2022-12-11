@@ -3,7 +3,7 @@
 class Blog_model extends CI_Model
 {
 
-	private $_table = 'courses';
+	private $_table = 'usr_blogs';
 
 	public function get($limit = null, $offset = null)
 	{

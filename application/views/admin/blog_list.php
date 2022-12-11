@@ -43,7 +43,7 @@
 		<div>
             <div>
                 <form action="" method="GET">
-                    <input style="margin: 0; width:360px; float:left;" class="form-control" type="search" name="keyword" placeholder="Search Posts" value="<?= html_escape($keyword) ?>">
+                    <input style="margin: 0; width:360px; float:left;" class="form-control" type="search" name="keyword" placeholder="Search blogs" value="<?= html_escape($keyword) ?>">
                     <input style="margin: 0;" type="submit" value="Search" class="btn btn-primary" >
                 </form>
             </div>
@@ -53,7 +53,7 @@
                         <div class="card mb-4">
                             <div class="card-body">
 		<table class="table">
-			<a href="<?= site_url('admin/post/new') ?>" class="btn btn-primary" role="button">+ Create New blogs</a>
+			<a href="<?= site_url('admin/blog/new') ?>" class="btn btn-primary" role="button">+ Create New blogs</a>
 				<thead>
 					<tr>
 						<th>Title</th>
@@ -76,9 +76,9 @@
 						<td>
 							<div class="action">
 								<a href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
-								<a href="<?= site_url('admin/post/edit/'.$blog->id) ?>" class="btn btn-warning" role="button">Edit</a>
+								<a href="<?= site_url('admin/blog/edit/'.$blog->id) ?>" class="btn btn-warning" role="button">Edit</a>
 								<a href="#" 
-									data-delete-url="<?= site_url('admin/post/delete/'.$blog->id) ?>" 
+									data-delete-url="<?= site_url('admin/blog/delete/'.$blog->id) ?>" 
 									class="btn btn-danger"
 									role="button"
 									onclick="deleteConfirm(this)">Delete</a>
