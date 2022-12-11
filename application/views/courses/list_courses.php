@@ -3,12 +3,11 @@
 
 <head>
 	<?php $this->load->view('_partials/header.php'); ?>
-  <style>p.new {
-     width: 250px;
-     white-space: nowrap;
+  <style>div.excerpt {
      overflow: hidden;
      text-overflow: ellipsis;
-}</style>
+}
+</style>
 </head>
 
 <body>
@@ -29,10 +28,9 @@
         <div class="row">
         <?php foreach ($courses as $course) : ?>
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box" style="height: 280px;">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a></h4>
-              <p class="new"><?= $course->content ?></p>
             </div>
           </div>
 		  <?php endforeach ?>

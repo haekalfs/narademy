@@ -23,3 +23,11 @@
 
   <!-- Template Main CSS File -->
   <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
+  <style>
+    p.excerpt {
+     width: 250px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    }
+  </style>

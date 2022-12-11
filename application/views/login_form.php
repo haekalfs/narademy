@@ -8,7 +8,7 @@
 <body>
 	<?php $this->load->view('_partials/navbar.php'); ?>
     <?php $this->load->view('_partials/breadcumbs.php'); ?>
-	<div class="container">
+	<div class="container"><br>
 		<h1>Login</h1>
 		<p>Masuk ke Dashboard</p>
 

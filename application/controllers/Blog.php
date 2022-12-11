@@ -26,7 +26,9 @@ class Blog extends CI_Controller
     $offset = html_escape($this->input->get('per_page'));
   
     $data['blogs'] = $this->blog_model->get_published($limit, $offset);
-  
+    $data['floc'] = [
+      'title' => "Read Our Blogs",
+    ];
     if(count($data['blogs']) > 0){
       $this->load->view('blogs/list_blogs.php', $data);
     } else {

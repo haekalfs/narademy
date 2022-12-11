@@ -56,7 +56,9 @@ class Home extends CI_Controller
         return $this->load->view('contact_thanks');
         }
     }
-
+    $data['floc'] = [
+        'title' => "Contact Us",
+      ];
     $this->load->view('contact', $data);
     }
 

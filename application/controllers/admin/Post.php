@@ -18,10 +18,10 @@ class Post extends CI_Controller
     
         $this->load->library('pagination');
     
-      $config['base_url'] = site_url('/admin/post');
+      	$config['base_url'] = site_url('/admin/post');
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->course_model->count();
-        $config['per_page'] = 2; // <-kamu bisa ubah ini
+        $config['per_page'] = 4; // <-kamu bisa ubah ini
 
         $config['full_tag_open'] = '<div class="pagination">';
         $config['full_tag_close'] = '</div>';
@@ -74,7 +74,7 @@ class Post extends CI_Controller
 			$saved = $this->course_model->insert($course);
 
 			if ($saved) {
-				$this->session->set_flashdata('message', 'Article was created');
+				$this->session->set_flashdata('message', 'Course has been created');
 				return redirect('admin/post');
 			}
 		}

@@ -41,6 +41,15 @@ class Course_model extends CI_Model
 		return $query->row();
 	}
 
+	public function find_title($course_title)
+	{
+		if (!$course_title) {
+			return;
+		}
+		$query = $this->db->get_where($this->_table, ['title' => $course_title]);
+		return $query->row();
+	}
+
 	public function insert($course)
 	{
 		return $this->db->insert($this->_table, $course);

@@ -16,9 +16,9 @@ class Course extends CI_Controller
     $config['base_url'] = site_url('/course');
     $config['page_query_string'] = TRUE;
     $config['total_rows'] = $this->course_model->get_published_count();
-    $config['per_page'] = 4;
+    $config['per_page'] = 12;
   
-    $config['full_tag_open'] = '<div class="pagination">';
+    $config['full_tag_open'] = '<div class="pagination justify-content-center">';
     $config['full_tag_close'] = '</div>';
 
     $this->pagination->initialize($config);
@@ -26,7 +26,9 @@ class Course extends CI_Controller
     $offset = html_escape($this->input->get('per_page'));
   
     $data['courses'] = $this->course_model->get_published($limit, $offset);
-  
+    $data['floc'] = [
+      'title' => "Browse All Courses",
+    ];
     if(count($data['courses']) > 0){
       $this->load->view('courses/list_courses.php', $data);
     } else {

@@ -16,7 +16,7 @@
 			</div>
 			<div class="post-body"><br>
 				<?= $blog->content ?>
-			</div>
+			</div><br><br>
 		</article>
 	</div>
 	<?php $this->load->view('_partials/footer.php'); ?>
