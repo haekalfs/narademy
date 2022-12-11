@@ -9,24 +9,10 @@
         <ul>
           <li><a class="nav-link scrollto " href="<?= site_url('home') ?>">Home</a></li>
           <li><a class="nav-link scrollto" href="<?= site_url('about') ?>">About</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-          <li class="dropdown"><a href="<?= site_url('course') ?>"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="<?= site_url('programming') ?>">Programming</a></li>
-              <li class="dropdown"><a href="#"><span>SAP ERP</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="<?= site_url('sap') ?>">SAP HCM</a></li>
-                  <!-- <li><a href="<?= site_url('sap') ?>">SAP FI and CO</a></li> -->
-                  <li><a href="<?= site_url('sap') ?>">SAP BASIS</a></li>
-                </ul>
-              </li>
-              <li><a href="<?= site_url('linux') ?>">Linux Infrastructure</a></li>
-              <!-- <li><a href="<?= site_url('digmar') ?>">Digital Marketing</a></li> -->
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="<?= site_url('#team') ?>">Team</a></li>
+          <li><a class="nav-link scrollto" href="<?= site_url('course') ?>">Courses</a></li>
+          <!-- <a href="<?= site_url('search') ?>">Search</a> -->
+          <li><a class="nav-link scrollto" href="<?= site_url('blog') ?>">Blogs</a></li>
           <li><a class="nav-link scrollto" href="<?= site_url('contact') ?>">Contact</a></li>
-          <a href="<?= site_url('search') ?>">Search</a>
           <li><a class="getstarted scrollto" href="<?= site_url('admin') ?>">Join Us</a></li>
           <!-- <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Nama User</span><i class="bi bi-person-circle"></i></a>
             <ul>

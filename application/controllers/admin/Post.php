@@ -67,6 +67,7 @@ class Post extends CI_Controller
 				'title' => $this->input->post('title'),
 				'slug' => $slug,
 				'content' => $this->input->post('content'),
+				'link' => $this->input->post('link'),
 				'draft' => $this->input->post('draft')
 			];
 
@@ -104,6 +105,7 @@ class Post extends CI_Controller
 				'id' => $id,
 				'title' => $this->input->post('title'),
 				'content' => $this->input->post('content'),
+				'link' => $this->input->post('link'),
 				'draft' => $this->input->post('draft')
 			];
 			$updated = $this->course_model->update($course);

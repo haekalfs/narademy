@@ -23,6 +23,9 @@
           <h2>Courses</h2>
           <p>Browse all of our available courses and claim your certificate.</p>
         </div>
+        <div class="text-end">
+        <a href="<?= site_url('search') ?>" class="btn btn-primary">Search Courses <i class="bi-search"></i></a><br><br><br>
+        </div>
         <div class="row">
         <?php foreach ($courses as $course) : ?>
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">

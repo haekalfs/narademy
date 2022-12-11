@@ -30,6 +30,16 @@
 				</div>
 
 				<div>
+					<label for="link">Link</label>
+					<input type="text" name="link" class="<?= form_error('link') ? 'invalid' : '' ?> form-control"
+					value="<?= form_error('link') ? set_value('link') : $course->link ?>" 
+					required maxlength="128"/>
+					<div class="invalid-feedback">
+						<?= form_error('link') ?>
+					</div>
+				</div>
+
+				<div>
 					<label for="content">Konten</label>
 					<?php $content = form_error('content') ? set_value('content') : $course->content ?>
 					<input type="hidden" name="content" value="<?= html_escape($content) ?>">
