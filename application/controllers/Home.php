@@ -6,9 +6,11 @@ class Home extends CI_Controller
     {
         parent::__construct();
         $this->load->model('feedback_model');
+        $this->load->model('blog_model');
     }
     public function index()
     {
+        $data['blogs'] = $this->blog_model->get_published();
         $data['meta'] = [
 			'title' => 'Narademy',
 		];
