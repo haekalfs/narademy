@@ -33,7 +33,7 @@
 					?>
 					<img src="<?= $avatar ?>" alt="<?= htmlentities($current_user->name, TRUE) ?>" height="80" width="80">
 				</div>
-			</div>
+			</div><br>
 			<div class="card">
 				<div class="card-header">
 					<b>Profile Settings</b>
@@ -44,7 +44,7 @@
 					<br>
 					Email: <span class="text-gray"><?= html_escape($current_user->email) ?></span>
 				</div>
-			</div>
+			</div><br>
 			<div class="card">
 				<div class="card-header">
 					<b>Security & Password</b>
@@ -55,10 +55,8 @@
 					<br>
 					Last Changed: <span class="text-gray"><?= $current_user->password_updated_at ?></span>
 				</div>
-			</div>
-
-			<?php $this->load->view('admin/_partials/footer.php') ?>
-			</div>
+			</div><br>
+			</div><?php $this->load->view('admin/_partials/footer.php') ?>
 		</div>
 	</main>
 
