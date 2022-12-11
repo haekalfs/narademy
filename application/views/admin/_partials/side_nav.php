@@ -42,6 +42,10 @@
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link" href="<?= site_url('admin/post') ?>">
                                         <div class="sb-nav-link-icon"></div>
+                                        Courses
+                                    </a>
+                                    <a class="nav-link" href="<?= site_url('admin/post') ?>">
+                                        <div class="sb-nav-link-icon"></div>
                                         Posts
                                     </a>
                                     <a class="nav-link" href="<?= site_url('admin/feedback') ?>">
