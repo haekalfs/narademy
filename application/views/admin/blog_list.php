@@ -35,10 +35,10 @@
 
 		<div id="layoutSidenav_content">
 			<div class="container-fluid px-4">
-                <h1 class="mt-4">Manage Courses</h1>
+                <h1 class="mt-4">Manage blogs</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Courses</li>
+                        <li class="breadcrumb-item active">blogs</li>
                     </ol>
 		<div>
             <div>
@@ -53,7 +53,7 @@
                         <div class="card mb-4">
                             <div class="card-body">
 		<table class="table">
-			<a href="<?= site_url('admin/post/new') ?>" class="btn btn-primary" role="button">+ Create New Courses</a>
+			<a href="<?= site_url('admin/post/new') ?>" class="btn btn-primary" role="button">+ Create New blogs</a>
 				<thead>
 					<tr>
 						<th>Title</th>
@@ -62,23 +62,23 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach($courses as $course): ?>
+					<?php foreach($blogs as $blog): ?>
 					<tr>
 						<td>
-							<div><?= $course->title ?></div>
-							<div class="text-gray"><small><?= $course->created_at ?><small></div>
+							<div><?= $blog->title ?></div>
+							<div class="text-gray"><small><?= $blog->created_at ?><small></div>
 						</td>
-						<?php if($course->draft === 'true'): ?>
+						<?php if($blog->draft === 'true'): ?>
 							<td class="text-center text-gray">Draft</td>
 						<?php else: ?>
 							<td class="text-center text-green">Published</td>
 						<?php endif ?>
 						<td>
 							<div class="action">
-								<a href="<?= site_url('course/'.$course->slug) ?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
-								<a href="<?= site_url('admin/post/edit/'.$course->id) ?>" class="btn btn-warning" role="button">Edit</a>
+								<a href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
+								<a href="<?= site_url('admin/post/edit/'.$blog->id) ?>" class="btn btn-warning" role="button">Edit</a>
 								<a href="#" 
-									data-delete-url="<?= site_url('admin/post/delete/'.$course->id) ?>" 
+									data-delete-url="<?= site_url('admin/post/delete/'.$blog->id) ?>" 
 									class="btn btn-danger"
 									role="button"
 									onclick="deleteConfirm(this)">Delete</a>

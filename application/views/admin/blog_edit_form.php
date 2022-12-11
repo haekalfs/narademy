@@ -12,17 +12,17 @@
 
 		<div id="layoutSidenav_content">
 			<div class="container-fluid px-4">
-					<h1 class="mt-4">Edit Course</h1>
+					<h1 class="mt-4">Edit blog</h1>
 						<ol class="breadcrumb mb-4">
 							<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-							<li class="breadcrumb-item active">Edit Course</li>
+							<li class="breadcrumb-item active">Edit blog</li>
 						</ol>
 
 			<form action="" method="POST">
 				<div>
 					<label for="title">Title*</label>
 					<input type="text" name="title" class="<?= form_error('title') ? 'invalid' : '' ?> form-control"
-					value="<?= form_error('title') ? set_value('title') : $course->title ?>" 
+					value="<?= form_error('title') ? set_value('title') : $blog->title ?>" 
 					required maxlength="128"/>
 					<div class="invalid-feedback">
 						<?= form_error('title') ?>
@@ -31,7 +31,7 @@
 
 				<div>
 					<label for="content">Konten</label>
-					<?php $content = form_error('content') ? set_value('content') : $course->content ?>
+					<?php $content = form_error('content') ? set_value('content') : $blog->content ?>
 					<input type="hidden" name="content" value="<?= html_escape($content) ?>">
 					<div id="editor" style="min-height: 160px;"><?= $content ?></div>
 				</div>

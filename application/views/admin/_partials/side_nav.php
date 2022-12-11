@@ -44,7 +44,7 @@
                                         <div class="sb-nav-link-icon"></div>
                                         Courses
                                     </a>
-                                    <a class="nav-link" href="<?= site_url('admin/post') ?>">
+                                    <a class="nav-link" href="<?= site_url('admin/blog') ?>">
                                         <div class="sb-nav-link-icon"></div>
                                         Posts
                                     </a>
