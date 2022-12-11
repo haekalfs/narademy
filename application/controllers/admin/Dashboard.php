@@ -14,10 +14,11 @@ class Dashboard extends CI_Controller
 	{
 		$this->load->model('course_model');
 		$this->load->model('feedback_model');
-		
+		$this->load->model('blog_model');
 		$data = [
             "current_user" => $this->auth_model->current_user(),
 			"course_count" => $this->course_model->count(),
+			"blog_count" => $this->blog_model->count(),
 			"feedback_count" => $this->feedback_model->count()
 		];
 
