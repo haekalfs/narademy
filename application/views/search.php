@@ -21,14 +21,16 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-5">
 							<form action="" method="get" style="flex-direction: row; align-items:center">
-								<div>
+								<div class="row justify-content-center">
 									<input class="form-control" type="search" name="keyword"
-										style="width: 460px; float:left;" placeholder="Keyword.."
+										style="width: 460px;" placeholder="Keyword..."
 										value="<?= html_escape($keyword) ?>" required maxlength="32" />
 								</div>
-
-								<div>
-									<input type="submit" class="btn btn-primary" value="Cari">
+									<br>
+								<div class="row justify-content-center">
+									<div class="col-lg-3">
+										<input style="width: 120px;" type="submit" class="btn btn-primary" value="Search">
+									</div>
 								</div>
 							</form>
 
@@ -47,8 +49,8 @@
 							<?php if ($keyword) : ?>
 						<br>
 							<div style="height: 100px; text-align:center;">
-								<h1 style="color:red;">Tidak ada yang ditemukan</h1>
-								<p>Coba dengan kata kunci yang lain</p>
+								<h1 style="color:red;">Error 404... Desired Courses not found.</h1>
+								<p>Try again with another keyword.</p>
 							</div>
 							<?php endif ?>
 							<?php endif ?>

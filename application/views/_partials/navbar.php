@@ -25,7 +25,7 @@
               <li><a href="<?= site_url('digmar') ?>">Digital Marketing</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="<?= site_url('#team') ?>">Team</a></li>
           <a href="<?= site_url('search') ?>">Search</a>
           <li><a class="getstarted scrollto" href="<?= site_url('admin') ?>">Join Us</a></li>
         </ul>

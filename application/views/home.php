@@ -115,7 +115,7 @@
               Narademy stands for Nara Academy which provide education for all levels especially in IT Field. Narademy is not just about learning but it allows people to share their knowledge to the others, so they can grow together.
               We Learn, Grow and achieve our dreams together.
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <a href="<?= site_url('about') ?>" class="btn-learn-more">Learn More</a>
           </div>
         </div>
 
@@ -139,7 +139,7 @@
               <div class="member-info">
                 <h4>Haekal Sastradilaga</h4>
                 <span>19210677</span>
-                <p>Sayangi ibumu jangan ibu-ibu dengan bekerja hingga tulang anda keropos.</p>
+                <p>Sayangi ibumu jangan ibu-ibu dan bekerjalah hingga tulang anda keropos.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
