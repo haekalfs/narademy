@@ -3,11 +3,6 @@
 
 <head>
 	<?php $this->load->view('_partials/header.php'); ?>
-  <style>div.excerpt {
-     overflow: hidden;
-     text-overflow: ellipsis;
-}
-</style>
 </head>
 
 <body>
@@ -31,6 +26,7 @@
             <div class="icon-box" style="height: 280px;">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a></h4>
+              <p style=" width: 250px;"><?= substr_replace($course->content, "...", 80); ?></p>
             </div>
           </div>
 		  <?php endforeach ?>

@@ -65,9 +65,9 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="<?= site_url('blog/'.$blog->slug) ?>"><?= $blog->title ? html_escape($blog->title) : "No Title" ?></a></h4>
-              <p class="new"><?= $blog->content ?></p>
-            </div><?php endforeach ?>
-          </div>
+              <p class="new"><?= substr_replace($blog->content, "...", 180); ?></p>
+            </div>
+          </div><?php endforeach ?>
         </div>
       </div>
     </section><!-- End Services Section -->

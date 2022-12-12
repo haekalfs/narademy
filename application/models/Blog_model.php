@@ -16,6 +16,7 @@ class Blog_model extends CI_Model
 			$query = $this->db
 				->get_where($this->_table, ['draft' => 'FALSE']);
 		} else {
+			$query = $this->db->order_by("title", "desc");
 			$query =  $this->db
 				->get_where($this->_table, ['draft' => 'FALSE'], $limit, $offset);
 		}

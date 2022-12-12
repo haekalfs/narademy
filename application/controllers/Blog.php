@@ -18,7 +18,7 @@ class Blog extends CI_Controller
     $config['total_rows'] = $this->blog_model->get_published_count();
     $config['per_page'] = 4;
   
-    $config['full_tag_open'] = '<div class="pagination">';
+    $config['full_tag_open'] = '<div class="pagination justify-content-center">';
     $config['full_tag_close'] = '</div>';
 
     $this->pagination->initialize($config);

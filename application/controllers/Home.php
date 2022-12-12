@@ -10,11 +10,29 @@ class Home extends CI_Controller
     }
     public function index()
     {
-        $data['blogs'] = $this->blog_model->get_published();
+        $this->load->library('pagination');
+  
+        $config['base_url'] = site_url('home');
+        $config['page_query_string'] = TRUE;
+        $config['total_rows'] = $this->blog_model->get_published_count();
+        $config['per_page'] = 4;
+    
+        $config['full_tag_open'] = '<div class="pagination">';
+        $config['full_tag_close'] = '</div>';
+
+        $this->pagination->initialize($config);
+        $limit = $config['per_page'];
+        $offset = html_escape($this->input->get('per_page'));
+    
+        $data['blogs'] = $this->blog_model->get_published($limit, $offset);
         $data['meta'] = [
-			'title' => 'Narademy',
-		];
-        $this->load->view('home', $data);
+            'title' => 'Narademy',
+        ];
+        if(count($data['blogs']) > 0){
+            $this->load->view('home', $data);
+        } else {
+        ///
+        }
     }
 
     public function about()
