@@ -116,7 +116,7 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="asset/img/team/haekal.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/haekal.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Haekal Sastradilaga</h4>
                 <span>19210677</span>
@@ -133,7 +133,7 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="asset/img/team/nada1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/nada1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Nada Rahmawati</h4>
                 <span>19211226</span>
@@ -150,7 +150,7 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="asset/img/team/dhika.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/dhika.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Andhika Prasetya</h4>
                 <span>19210748</span>
@@ -167,7 +167,7 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="asset/img/team/fauzan.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/fauzan.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Fauzan</h4>
                 <span>19211304</span>
@@ -184,7 +184,7 @@
 
           <div class="col-lg-4 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="asset/img/team/fariz.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/fariz.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Fariz Darmawan</h4>
                 <span>19211101</span>
