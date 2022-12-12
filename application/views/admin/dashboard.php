@@ -56,7 +56,7 @@
                         </div>
                         <div class="row"  style="font-family: poppins;">
                             <div class="column">
-                                <img src="<?= base_url("asset/img/admin-bg01.png") ?>" alt="Avatar" style="width:100%">
+                                <img src="<?= base_url("assets/img/admin-bg01.png") ?>" alt="Avatar" style="width:100%">
                                 <div class="card">
                                     <h4>What's Narademy?</h4>
                                     <p>Narademy is website education. Narademy is not just about learning but it allows people to share their knowledge to the others, so they can grow together.</p>
@@ -64,7 +64,7 @@
                             </div>
 
                             <div class="column">
-                            <img src="<?= base_url("asset/img/admin-bg04.png") ?>" alt="Avatar" style="width:100%">
+                            <img src="<?= base_url("assets/img/admin-bg04.png") ?>" alt="Avatar" style="width:100%">
                                 <div class="card">
                                 <h3>Know Yourself</h3>
                                 <p>Don't aim to be understood by others before you understand yourself. People may never understand your intentions. You know them.</p><br>
@@ -72,7 +72,7 @@
                             </div>
                             
                             <div class="column">
-                            <img src="<?= base_url("asset/img/admin-bg06.png") ?>" alt="Avatar" style="width:100%">
+                            <img src="<?= base_url("assets/img/admin-bg06.png") ?>" alt="Avatar" style="width:100%">
                                 <div class="card">
                                 <h4>Pink Roses</h4>
                                 <p>If you are not enough for yourself you will never be enough for someone else.</p><br><br><br>
@@ -80,7 +80,7 @@
                             </div>
                             
                             <div class="column">
-                            <img src="<?= base_url("asset/img/admin-bg02.png") ?>" alt="Avatar" style="width:100%">
+                            <img src="<?= base_url("assets/img/admin-bg02.png") ?>" alt="Avatar" style="width:100%">
                                 <div class="card">
                                 <h3>Be True</h3>
                                 <p>If you don't stop judging yourself, putting yourself down, believing that this is as good as you can be, then you've closed doors for yourself before they even appear in front of you.</p>

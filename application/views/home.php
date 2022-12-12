@@ -22,27 +22,27 @@
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/Binus.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/Binus.png") ?>" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/Jasamarga.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/Jasamarga.png") ?>" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/Maranatha.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/Maranatha.png") ?>" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/UII.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/UII.png") ?>" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/XLAxiata.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/XLAxiata.png") ?>" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="asset/img/clients/Smartfren.png" class="img-fluid" alt="">
+            <img src="<?= base_url("assets/img/clients/Smartfren.png") ?>" class="img-fluid" alt="">
           </div>
 
         </div>
