@@ -55,6 +55,10 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Master Data</div>
+                            <a class="nav-link" href="<?= site_url('admin/users') ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Manage Users
+                            </a>
                             <a class="nav-link" href="<?= site_url('admin/setting') ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Settings

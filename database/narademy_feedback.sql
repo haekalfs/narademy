@@ -38,7 +38,7 @@ CREATE TABLE `feedback` (
 
 LOCK TABLES `feedback` WRITE;
 /*!40000 ALTER TABLE `feedback` DISABLE KEYS */;
-INSERT INTO `feedback` VALUES ('638f8cf35eb036.70896019','asdasd','haekalboedoet@gmail.com','asasd','2022-12-06 18:41:55'),('638f8d3a757b97.68738307','asdasd','haekalboedoet@gmail.com','asasd','2022-12-06 18:43:06');
+INSERT INTO `feedback` VALUES ('638f8cf35eb036.70896019','asdasd','haekalboedoet@gmail.com','asasd','2022-12-06 18:41:55'),('638f8d3a757b97.68738307','asdasd','haekalboedoet@gmail.com','asasd','2022-12-06 18:43:06'),('6395d5f01555a8.68455862','Haekal Sastradilaga','haekalboedoet@gmail.com','asd','2022-12-11 13:06:56'),('6395d632eaab02.26565606','Haekal Sastradilaga','haekalboedoet@gmail.com','asdad','2022-12-11 13:08:02'),('6395d74ce4a735.93177951','Haekal Sastradilaga','haekalboedoet@gmail.com','asdasdaf','2022-12-11 13:12:44');
 /*!40000 ALTER TABLE `feedback` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-09  5:15:23
+-- Dump completed on 2022-12-12 20:24:55

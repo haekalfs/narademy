@@ -27,6 +27,7 @@ CREATE TABLE `user` (
   `name` varchar(32) NOT NULL,
   `email` varchar(64) NOT NULL,
   `username` varchar(64) NOT NULL,
+  `role` varchar(40) NOT NULL,
   `password` varchar(255) NOT NULL,
   `avatar` varchar(32) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -42,7 +43,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('6118b2a943acc2.78631959','Administrator-Haekal','admin@mail.com','admin','$2y$10$hRi1qju2KOeEPcBZ0wYfhu/PN5e9Wl.ddWeDTds8Uokad764X9D1a','6118b2a943acc278631959.jpeg','2021-08-14 23:22:33','2022-12-08 16:14:36','2022-12-08 14:34:50');
+INSERT INTO `user` VALUES ('6118b2a943acc2.78631959','Administrator-Haekal','admin@mail.com','admin','1104','$2y$10$hRi1qju2KOeEPcBZ0wYfhu/PN5e9Wl.ddWeDTds8Uokad764X9D1a','6118b2a943acc278631959.jpeg','2021-08-14 23:22:33','2022-12-12 06:42:19','2022-12-08 14:34:50');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-09  5:15:23
+-- Dump completed on 2022-12-12 20:24:55
