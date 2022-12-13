@@ -14,35 +14,10 @@ class Blog extends CI_Controller
 
     public function index()
     {
-        $data['current_user'] = $this->auth_model->current_user();
-    
-        $this->load->library('pagination');
-    
-      $config['base_url'] = site_url('/admin/blog');
-        $config['page_query_string'] = TRUE;
-        $config['total_rows'] = $this->blog_model->count();
-        $config['per_page'] = 4; // <-kamu bisa ubah ini
-
-        $config['full_tag_open'] = '<div class="pagination">';
-        $config['full_tag_close'] = '</div>';
-    
-        $this->pagination->initialize($config);
-        $limit = $config['per_page'];
-        $offset = html_escape($this->input->get('per_page'));
-    
-        $data['blogs'] = $this->blog_model->get($limit, $offset);
+		$data['current_user'] = $this->auth_model->current_user();
             
-        $data['keyword'] = $this->input->get('keyword');
-        
-        if(!empty($this->input->get('keyword'))){
-            $data['blogs'] = $this->blog_model->search($data['keyword']);
-        }
-            
-        if(count($data['blogs']) <= 0 && !$this->input->get('keyword')){
-            $this->load->view('admin/blog_empty.php', $data);
-        } else {
-            $this->load->view('admin/blog_list.php', $data);
-        }
+        $data['blogs'] = $this->blog_model->get();
+		$this->load->view('admin/blog_list.php', $data);
     }
 
 	public function new()

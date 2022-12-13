@@ -5,27 +5,28 @@
 	<?php $this->load->view('admin/_partials/header.php') ?>
 	<style>
 		/* Pagination styles */
-.pagination {
-	display: flex;
-	padding: 1em 0;
-}
+		.pagination {
+			display: flex;
+			padding: 1em 0;
+		}
 
-.pagination a,
-.pagination strong {
-	border: 1px solid silver;
-	border-radius: 8px;
-	color: black;
-	padding: 0.5em;
-	margin-right: 0.5em;
-	text-decoration: none;
-}
+		.pagination a,
+		.pagination strong {
+			border: 1px solid silver;
+			border-radius: 8px;
+			color: black;
+			padding: 0.5em;
+			margin-right: 0.5em;
+			text-decoration: none;
+		}
 
-.pagination a:hover,
-.pagination strong {
-	border: 1px solid #008cba;
-	background-color: #008cba;
-	color: white;
-}
+		.pagination a:hover,
+		.pagination strong {
+			border: 1px solid #008cba;
+			background-color: #008cba;
+			color: white;
+		}
+
 	</style>
 </head>
 
@@ -35,68 +36,68 @@
 
 		<div id="layoutSidenav_content">
 			<div class="container-fluid px-4">
-                <h1 class="mt-4">Manage blogs</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                        <li class="breadcrumb-item active">blogs</li>
-                    </ol>
-		<div>
-            <div>
-                <form action="" method="GET">
-                    <input style="margin: 0; width:360px; float:left;" class="form-control" type="search" name="keyword" placeholder="Search blogs" value="<?= html_escape($keyword) ?>">
-                    <input style="margin: 0;" type="submit" value="Search" class="btn btn-primary" >
-                </form>
-            </div>
-        </div><br>
-		<div class="row">
-    				<div class="col-xl-12">
-                        <div class="card mb-4">
-                            <div class="card-body">
-		<table class="table">
-			<a href="<?= site_url('admin/blog/new') ?>" class="btn btn-primary" role="button">+ Create New blogs</a>
-				<thead>
-					<tr>
-						<th>Title</th>
-						<th style="width: 15%;" class="text-center">Status</th>
-						<th style="width: 25%;" class="text-center">Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php foreach($blogs as $blog): ?>
-					<tr>
-						<td>
-							<div><?= $blog->title ?></div>
-							<div class="text-gray"><small><?= $blog->created_at ?><small></div>
-						</td>
-						<?php if($blog->draft === 'true'): ?>
-							<td class="text-center text-gray">Draft</td>
-						<?php else: ?>
-							<td class="text-center text-green">Published</td>
-						<?php endif ?>
-						<td>
-							<div class="action">
-								<a href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
-								<a href="<?= site_url('admin/blog/edit/'.$blog->id) ?>" class="btn btn-warning" role="button">Edit</a>
-								<a href="#" 
-									data-delete-url="<?= site_url('admin/blog/delete/'.$blog->id) ?>" 
-									class="btn btn-danger"
-									role="button"
-									onclick="deleteConfirm(this)">Delete</a>
-							</div>
-						</td>
-					</tr>
-					<?php endforeach ?>
-					</table>
+				<h1 class="mt-4">Manage blogs</h1>
+				<ol class="breadcrumb mb-4">
+					<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+					<li class="breadcrumb-item active">blogs</li>
+				</ol>
+				<div>
+					<div>
+						<a href="<?= site_url('admin/blog/new') ?>" class="btn btn-primary" role="button">+ Create
+								New blogs</a>
+					</div>
+				</div><br>
+				<div class="card mb-4">
+					<div class="card-header">
+						<i class="fas fa-table me-1"></i>
+						DataTable Example
+					</div>
+					<div class="card-body">
+						<table id="datatablesSimple">
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th class="text-center">Status</th>
+									<th class="text-center">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach($blogs as $blog): ?>
+								<tr>
+									<td>
+										<div><?= $blog->title ?></div>
+										<div class="text-gray"><small><?= $blog->created_at ?><small></div>
+									</td>
+									<?php if($blog->draft === 'true'): ?>
+									<td class="text-center text-gray">Draft</td>
+									<?php else: ?>
+									<td class="text-center text-green">Published</td>
+									<?php endif ?>
+									<td style="width: 20%;">
+										<div class="action">
+											<a href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary"
+												target="_blank" role="button">Preview</a>
+											<a href="<?= site_url('admin/blog/edit/'.$blog->id) ?>"
+												class="btn btn-warning" role="button">Edit</a>
+											<a href="#"
+												data-delete-url="<?= site_url('admin/blog/delete/'.$blog->id) ?>"
+												class="btn btn-danger" role="button"
+												onclick="deleteConfirm(this)">Delete</a>
+										</div>
+									</td>
+								</tr>
+								<?php endforeach ?>
+						</table>
+					</div>
 				</div>
-			</div></tbody><?=  $this->pagination->create_links(); ?>
+				</tbody>
+			</div>
 		</div>
-	</div>
-</div>
-            
-<?php $this->load->view('admin/_partials/footer.php') ?>
-	</div>
-</main>
+		</div>
 
+		<?php $this->load->view('admin/_partials/footer.php') ?>
+		</div>
+	</main>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		function deleteConfirm(event){

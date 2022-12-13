@@ -46,7 +46,7 @@
                                     </a>
                                     <a class="nav-link" href="<?= site_url('admin/blog') ?>">
                                         <div class="sb-nav-link-icon"></div>
-                                        Posts
+                                        Blog Posts
                                     </a>
                                     <a class="nav-link" href="<?= site_url('admin/feedback') ?>">
                                         <div class="sb-nav-link-icon"></div>
@@ -63,7 +63,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Settings
                             </a>
-                            <a class="nav-link" href="<?= site_url('admin/logout') ?>">
+                            <a class="nav-link" href="<?= site_url('auth/logout') ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Log Out
                             </a>
