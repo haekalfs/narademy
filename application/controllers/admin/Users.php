@@ -1,6 +1,6 @@
 <?php
 
-class Dashboard extends CI_Controller
+class Users extends CI_Controller
 {
     public function __construct()
 	{
@@ -12,12 +12,6 @@ class Dashboard extends CI_Controller
 	}
 	public function index()
 	{
-		$this->load->model('user_model');
-		$data = [
-            "current_user" => $this->auth_model->current_user(),
-			"feedback_count" => $this->feedback_model->count()
-		];
-
-		$this->load->view('admin/users.php', $data);
+		$this->load->view('admin/users.php');
 	}
 }

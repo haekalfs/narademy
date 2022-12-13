@@ -48,7 +48,7 @@ class Blog extends CI_Controller
 			$saved = $this->blog_model->insert($blog);
 
 			if ($saved) {
-				$this->session->set_flashdata('message', 'Article was created');
+				$this->session->set_flashdata('message', 'Blog was created');
 				return redirect('admin/blog');
 			}
 		}
@@ -83,7 +83,7 @@ class Blog extends CI_Controller
 			];
 			$updated = $this->blog_model->update($blog);
 			if ($updated) {
-				$this->session->set_flashdata('message', 'Article was updated');
+				$this->session->set_flashdata('message', 'Blog was updated');
 				redirect('admin/blog');
 			}
 		}
@@ -100,7 +100,7 @@ class Blog extends CI_Controller
 
 		$deleted = $this->blog_model->delete($id);
 		if ($deleted) {
-			$this->session->set_flashdata('message', 'Article was deleted');
+			$this->session->set_flashdata('message', 'Blog was deleted');
 			redirect('admin/blog');
 		}
 	}

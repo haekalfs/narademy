@@ -50,20 +50,24 @@
 				<div class="card mb-4">
 					<div class="card-header">
 						<i class="fas fa-table me-1"></i>
-						DataTable Example
+						List Blogs
 					</div>
 					<div class="card-body">
 						<table id="datatablesSimple">
 							<thead>
 								<tr>
+									<th>No.</th>
 									<th>Title</th>
 									<th class="text-center">Status</th>
 									<th class="text-center">Action</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach($blogs as $blog): ?>
+								<?php $i = 1; foreach($blogs as $blog): ?>
 								<tr>
+									<td style="width: 10px;">
+										<?php echo $i++; ?>
+									</td>
 									<td>
 										<div><?= $blog->title ?></div>
 										<div class="text-gray"><small><?= $blog->created_at ?><small></div>

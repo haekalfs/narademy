@@ -85,7 +85,7 @@ class Post extends CI_Controller
 			];
 			$updated = $this->course_model->update($course);
 			if ($updated) {
-				$this->session->set_flashdata('message', 'Article was updated');
+				$this->session->set_flashdata('message', 'Course was updated');
 				redirect('admin/post');
 			}
 		}
@@ -102,7 +102,7 @@ class Post extends CI_Controller
 
 		$deleted = $this->course_model->delete($id);
 		if ($deleted) {
-			$this->session->set_flashdata('message', 'Article was deleted');
+			$this->session->set_flashdata('message', 'Course was deleted');
 			redirect('admin/post');
 		}
 	}
