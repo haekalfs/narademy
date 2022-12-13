@@ -31,7 +31,7 @@
                 <?php elseif($this->session->userdata('access')=='2'):?>
                   <a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a>
                 <?php else:?>
-                  <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus" aria-hidden="true"></i> <?= $course->title ? html_escape($course->title) : "No Title" ?></a>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#restrictModal"> <i class="fa fa-plus" aria-hidden="true"></i> <?= $course->title ? html_escape($course->title) : "No Title" ?></a>
                 <?php endif;?>
               </h4>
               <p style=" width: 250px;"><?= substr_replace($course->content, "...", 80); ?></p>
@@ -40,7 +40,8 @@
 		  <?php endforeach ?>
 		</div>
   </div>
-<div class="modal" id="myModal">
+  <!-- modal -->
+<div class="modal" id="restrictModal">
    <div class="modal-dialog ">
        <div class="modal-content">
            <div class="modal-header">
@@ -50,7 +51,7 @@
         <p>You need to become a member.</p>
           </div>
            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
        </div>
   </div>

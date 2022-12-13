@@ -47,10 +47,8 @@
 										<div><?= $user->name ?></div>
 									</td>
 									<td><?= $user->email ?></td>
-									<td style="width: 20%;">
+									<td style="width: 10%;">
 										<div>
-											<a href=""
-												class="btn btn-warning" role="button">Edit</a>
 											<a href="#"
                                                 data-delete-url="<?= site_url('admin/users/delete/'.$user->id) ?>"
 												class="btn btn-danger" role="button"

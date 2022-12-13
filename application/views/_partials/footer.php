@@ -74,3 +74,48 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
+<div class="modal" id="myModal">
+   <div class="modal-dialog ">
+       <div class="modal-content">
+           <div class="modal-header">
+              <h4 class="modal-title">Edit Profile</h4>
+           </div>
+          <div class="modal-body">
+            <form class="form-horizontal" method="post" action="<?= base_url("setting_user/edit_profile") ?>">
+                  <div class="modal-body">
+  
+                      <div class="form-group">
+                          <label class="control-label col-xs-3" >Name</label>
+                          <div class="col-xs-8">
+                              <input name="name" class="form-control" type="text" placeholder="Name..." required>
+                          </div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label class="control-label col-xs-3" >Email</label>
+                          <div class="col-xs-8">
+                              <input name="email" class="form-control" type="text" placeholder="Email..." required>
+                          </div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label class="control-label col-xs-3" >Password</label>
+                          <div class="col-xs-8">
+                              <input name="password" class="form-control" type="password" placeholder="Password..." required>
+                          </div>
+                      </div>
+                  </div>
+            </div><br>
+              <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+                  <button class="btn btn-primary">Simpan</button>
+              </div>
+          </form>
+       </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

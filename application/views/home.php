@@ -49,7 +49,6 @@
 
       </div>
     </section><!-- End Cliens Section -->
-    
 
     <!-- ======= Blogs Section ======= -->
     <section id="services" class="services section-bg">
@@ -206,5 +205,4 @@
 
     <?php $this->load->view('_partials/footer.php'); ?>
 </body>
-
 </html>

@@ -11,18 +11,18 @@ class User_model extends CI_Model
 		return $query->result();
 	}
 
-	public function insert($course)
+	public function insert($user)
 	{
-		return $this->db->insert($this->_table, $course);
+		return $this->db->insert($this->_table, $user);
 	}
 
-	public function update($course)
+	public function update($user)
 	{
-		if (!isset($course['id'])) {
+		if (!isset($user['id'])) {
 			return;
 		}
 
-		return $this->db->update($this->_table, $course, ['id' => $course['id']]);
+		return $this->db->update($this->_table, $user, ['id' => $user['id']]);
 	}
 
 	public function delete($id)

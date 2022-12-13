@@ -26,8 +26,8 @@
           <?php elseif($this->session->userdata('access')=='2'):?>
             <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Member</span><i class="bi bi-person-circle"></i></a>
             <ul>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">Activity Log</a></li>
+              <li><a href="#">My Certificate</a></li>
+              <li><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Edit Profile</a></li>
               <hr>
               <li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
             </ul>
