@@ -1865,7 +1865,7 @@ section {
 .pagination a,
 .pagination strong {
 	border: 1px solid silver;
-	border-radius: 8px;
+	border-radius: 300px;
 	color: black;
 	padding: 0.5em;
 	margin-right: 0.5em;

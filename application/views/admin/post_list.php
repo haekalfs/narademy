@@ -3,31 +3,6 @@
 
 <head>
 	<?php $this->load->view('admin/_partials/header.php') ?>
-	<style>
-		/* Pagination styles */
-		.pagination {
-			display: flex;
-			padding: 1em 0;
-		}
-
-		.pagination a,
-		.pagination strong {
-			border: 1px solid silver;
-			border-radius: 8px;
-			color: black;
-			padding: 0.5em;
-			margin-right: 0.5em;
-			text-decoration: none;
-		}
-
-		.pagination a:hover,
-		.pagination strong {
-			border: 1px solid #008cba;
-			background-color: #008cba;
-			color: white;
-		}
-
-	</style>
 </head>
 
 <body>

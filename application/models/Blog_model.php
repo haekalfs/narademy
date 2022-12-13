@@ -10,6 +10,7 @@ class Blog_model extends CI_Model
 		$query = $this->db->get($this->_table, $limit, $offset);
 		return $query->result();
 	}
+	
 	public function get_published($limit = null, $offset = null)
 	{
 		if (!$limit && $offset) {

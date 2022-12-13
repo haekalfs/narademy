@@ -2,7 +2,6 @@
 
 class Course_model extends CI_Model
 {
-
 	private $_table = 'courses';
 
 	public function get($limit = null, $offset = null)

@@ -25,17 +25,40 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box" style="height: 280px;">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a></h4>
+              <h4>
+                <?php if($this->session->userdata('access')=='1'):?>
+                  <a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a>
+                <?php elseif($this->session->userdata('access')=='2'):?>
+                  <a href="<?= site_url('course/'.$course->slug) ?>"><?= $course->title ? html_escape($course->title) : "No Title" ?></a>
+                <?php else:?>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus" aria-hidden="true"></i> <?= $course->title ? html_escape($course->title) : "No Title" ?></a>
+                <?php endif;?>
+              </h4>
               <p style=" width: 250px;"><?= substr_replace($course->content, "...", 80); ?></p>
             </div>
           </div>
 		  <?php endforeach ?>
 		</div>
-      </div>
-    </section><!-- End Services Section -->
+  </div>
+<div class="modal" id="myModal">
+   <div class="modal-dialog ">
+       <div class="modal-content">
+           <div class="modal-header">
+              <h4 class="modal-title">An Error Occured</h4>
+           </div>
+          <div class="modal-body">
+        <p>You need to become a member.</p>
+          </div>
+           <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+       </div>
+  </div>
+</div>
+</section><!-- End Services Section -->
     <?=  $this->pagination->create_links(); ?>
-
 	<?php $this->load->view('_partials/footer.php'); ?>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </html>
