@@ -23,7 +23,8 @@ class Auth_model extends CI_Model
 
 	public function login($username, $password)
 	{
-		$this->db->where('email', $username)->or_where('username', $username);
+		$where = "email='$username' OR username = '$username' AND role = '1104'";
+		$this->db->where($where);
 		$query = $this->db->get($this->_table);
 		$user = $query->row();
 
@@ -37,12 +38,39 @@ class Auth_model extends CI_Model
 			return FALSE;
 		}
 
-		// bikin session
+		//bikin session
 		$this->session->set_userdata([self::SESSION_KEY => $user->id]);
+		$this->session->set_userdata('access','1');
 		$this->_update_last_login($user->id);
 
-		return $this->session->has_userdata(self::SESSION_KEY);
+		return $this->session->has_userdata(self::SESSION_KEY,'access');
 	}
+
+	public function login_user($username, $password)
+	{
+		$where = "username = '$username' AND role = '2907'";
+		$this->db->where($where);
+		$query = $this->db->get($this->_table);
+		$user = $query->row();
+
+		// cek apakah user sudah terdaftar?
+		if (!$user) {
+			return FALSE;
+		}
+
+		// cek apakah passwordnya benar?
+		if (!password_verify($password, $user->password)) {
+			return FALSE;
+		}
+
+		//bikin session
+		$this->session->set_userdata([self::SESSION_KEY => $user->id]);
+		$this->session->set_userdata('access','2');
+		$this->_update_last_login($user->id);
+
+		return $this->session->has_userdata(self::SESSION_KEY,'access');
+	}
+
 
 	public function current_user()
 	{
@@ -58,6 +86,7 @@ class Auth_model extends CI_Model
 	public function logout()
 	{
 		$this->session->unset_userdata(self::SESSION_KEY);
+		$this->session->unset_userdata('access');
 		return !$this->session->has_userdata(self::SESSION_KEY);
 	}
 

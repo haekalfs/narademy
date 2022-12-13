@@ -13,15 +13,28 @@
           <!-- <a href="<?= site_url('search') ?>">Search</a> -->
           <li><a class="nav-link scrollto" href="<?= site_url('blog') ?>">Blogs</a></li>
           <li><a class="nav-link scrollto" href="<?= site_url('contact') ?>">Contact</a></li>
-          <li><a class="getstarted scrollto" href="<?= site_url('admin') ?>">Join Us</a></li>
-          <!-- <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Nama User</span><i class="bi bi-person-circle"></i></a>
+          <?php if($this->session->userdata('access')=='1'):?>
+          <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Admin</span><i class="bi bi-person-circle"></i></a>
+            <ul>
+              <li><a href="<?= site_url('admin/setting') ?>">Settings</a></li>
+              <li><a href="#">Activity Log</a></li>
+              <hr>
+              <li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
+            </ul>
+          </li>
+          <!-- Akses Buat Member -->
+          <?php elseif($this->session->userdata('access')=='2'):?>
+            <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Member</span><i class="bi bi-person-circle"></i></a>
             <ul>
               <li><a href="#">Settings</a></li>
               <li><a href="#">Activity Log</a></li>
               <hr>
-              <li><a href="#">Logout</a></li>
+              <li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
             </ul>
-          </li> -->
+          </li>
+          <?php else:?>
+            <li><a class="getstarted scrollto" href="<?= site_url('admin') ?>">Join Us</a></li>
+          <?php endif;?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
