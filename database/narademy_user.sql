@@ -34,7 +34,7 @@ CREATE TABLE `user` (
   `last_login` timestamp NULL DEFAULT NULL,
   `password_updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('6118b2a943acc2.78631959','Administrator-Haekal','admin@mail.com','admin','1104','$2y$10$hRi1qju2KOeEPcBZ0wYfhu/PN5e9Wl.ddWeDTds8Uokad764X9D1a','6118b2a943acc278631959.jpeg','2021-08-14 23:22:33','2022-12-12 06:42:19','2022-12-08 14:34:50');
+INSERT INTO `user` VALUES ('2','nada','nada@narademy.com','nada','2907','$2y$10$hRi1qju2KOeEPcBZ0wYfhu/PN5e9Wl.ddWeDTds8Uokad764X9D1a','6118b2a943acc278631959.jpeg','2021-08-14 23:22:33','2022-12-13 08:58:30','2022-12-08 14:34:50'),('6118b2a943acc2.78631959','Administrator-Haekal','admin@mail.com','admin','1104','$2y$10$hRi1qju2KOeEPcBZ0wYfhu/PN5e9Wl.ddWeDTds8Uokad764X9D1a','6118b2a943acc278631959.jpeg','2021-08-14 23:22:33','2022-12-13 09:03:10','2022-12-08 14:34:50');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-12 20:24:55
+-- Dump completed on 2022-12-13 23:54:00
