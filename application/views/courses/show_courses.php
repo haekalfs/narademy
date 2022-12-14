@@ -29,14 +29,14 @@
 				<div class="col-lg-6">
 					<?= $course->content ?>
 					<div>
-						<a class="btn btn-primary" href="<?= site_url('certification') ?>">Print Certificate</a>
+						<a id="printCert" style="display: none;" class="btn btn-primary" href="<?= site_url('certification') ?>">Print Certificate</a>
 					</div>
 				</div>
 				<div class="col-lg-6 pt-4 pt-lg-0">
-					<iframe autoplay width="660" height="315" src="<?= $course->link ?>"
+					<video onended="videoEnd()" autoplay width="660" height="315" src="<?= $course->link ?>"
 						title="<?= $course->title ? html_escape($course->title) : "No Title" ?>" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
+						allowfullscreen></video>
 				</div>
 			</div>
 		</article>
@@ -44,4 +44,14 @@
 	<?php $this->load->view('_partials/footer.php'); ?>
 </body>
 
+<script type='text/javascript'>
+  function videoEnd(){
+	var a = document.getElementById("printCert");
+		if (a.style.display === "none") {
+			a.style.display = "block";
+		} else {
+			a.style.display = "none";
+		}
+  }
+</script>
 </html>
