@@ -34,7 +34,7 @@ CREATE TABLE `user` (
   `last_login` timestamp NULL DEFAULT NULL,
   `password_updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
