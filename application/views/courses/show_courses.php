@@ -28,6 +28,9 @@
 			<div class="row content">
 				<div class="col-lg-6">
 					<?= $course->content ?>
+					<div>
+						<a class="btn btn-primary" href="<?= site_url('certification') ?>">Print Certificate</a>
+					</div>
 				</div>
 				<div class="col-lg-6 pt-4 pt-lg-0">
 					<iframe autoplay width="660" height="315" src="<?= $course->link ?>"

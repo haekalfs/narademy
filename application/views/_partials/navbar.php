@@ -16,8 +16,8 @@
           <?php if($this->session->userdata('access')=='1'):?>
           <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Admin</span><i class="bi bi-person-circle"></i></a>
             <ul>
+              <li><a href="<?= site_url('admin') ?>">Go To Admin Page</a></li>
               <li><a href="<?= site_url('admin/setting') ?>">Settings</a></li>
-              <li><a href="#">Activity Log</a></li>
               <hr>
               <li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
             </ul>
