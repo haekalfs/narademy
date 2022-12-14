@@ -20,10 +20,10 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('about') ?>">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('blog') ?>">Blogs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('blog') ?>">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('blog') ?>">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -42,11 +42,11 @@
             <h4>Our Social Networks</h4>
             <p>Follow us in our social media to get notified about our updates.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://twitter.com/@narademy" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/narademydotcom/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://instagram.com/haekal.strdlg" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://tiktok.com/@khaelss__" class="google-plus"><i class="bx bxl-tiktok"></i></a>
+              <a href="https://www.linkedin.com/in/haekal-sastradilaga-62b820178/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 

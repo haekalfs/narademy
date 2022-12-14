@@ -164,7 +164,7 @@
               <div class="member-info">
                 <h4>Fauzan</h4>
                 <span>19211304</span>
-                <p>Bangun, Main PS, Kuliah, Push Rank. Itu cyclenya.</p>
+                <p>Bangun, Makan, Main PS, Kuliah, Push Rank, Pulang, Tidur.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
