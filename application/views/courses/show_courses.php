@@ -29,29 +29,52 @@
 				<div class="col-lg-6">
 					<?= $course->content ?>
 					<div>
-						<a id="printCert" style="display: none;" class="btn btn-primary" href="<?= site_url('certification') ?>">Print Certificate</a>
+						<br><br><a id="printCert" style="display: none;" class="btn btn-primary" href="<?= site_url('certification') ?>">Print Certificate</a>
 					</div>
 				</div>
 				<div class="col-lg-6 pt-4 pt-lg-0">
-					<video onended="videoEnd()" autoplay width="660" height="315" src="<?= $course->link ?>"
+					<video controls onended="videoEnd()" id="myVideo" autoplay width="660" height="315" src="<?= $course->link ?>"
 						title="<?= $course->title ? html_escape($course->title) : "No Title" ?>" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></video>
 				</div>
 			</div>
 		</article>
-	</div>
+	</div><br><br><br>
 	<?php $this->load->view('_partials/footer.php'); ?>
 </body>
 
 <script type='text/javascript'>
-  function videoEnd(){
-	var a = document.getElementById("printCert");
-		if (a.style.display === "none") {
-			a.style.display = "block";
-		} else {
-			a.style.display = "none";
-		}
+
+var video = document.getElementById('myVideo');
+var supposedCurrentTime = 0;
+video.addEventListener('timeupdate', function() {
+  if (!video.seeking) {
+		supposedCurrentTime = video.currentTime;
+  }
+});
+// prevent user from seeking
+video.addEventListener('seeking', function() {
+  // guard agains infinite recursion:
+  // user seeks, seeking is fired, currentTime is modified, seeking is fired, current time is modified, ....
+  var delta = video.currentTime - supposedCurrentTime;
+  // delta = Math.abs(delta); // disable seeking previous content if you want
+  if (delta > 0.01) {
+    video.currentTime = supposedCurrentTime;
+  }
+});
+video.addEventListener('ended', function() {
+  // reset state in order to allow for rewind
+	supposedCurrentTime = 0;
+});
+
+var a = document.getElementById("printCert");
+  	function videoEnd(){
+	if (a.style.display === "none") {
+		a.style.display = "block";
+	} else {
+		a.style.display = "none";
+	}
   }
 </script>
 </html>

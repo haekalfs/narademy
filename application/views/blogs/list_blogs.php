@@ -3,12 +3,6 @@
 
 <head>
 	<?php $this->load->view('_partials/header.php'); ?>
-  <style>p.new {
-     width: 250px;
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-}</style>
 </head>
 
 <body>
@@ -25,11 +19,11 @@
         </div>
         <div class="row">
         <?php foreach ($blogs as $blog) : ?>
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div style="padding-top: 20px;" class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="<?= site_url('blog/'.$blog->slug) ?>"><?= $blog->title ? html_escape($blog->title) : "No Title" ?></a></h4>
-              <p class="new"><?= substr_replace($blog->content, "...", 180); ?></p>
+              <p style="width: 300px;"><?= substr_replace($blog->content, "...", 180); ?></p>
             </div>
           </div>
 		  <?php endforeach ?>

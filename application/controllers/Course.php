@@ -16,7 +16,7 @@ class Course extends CI_Controller
     $config['base_url'] = site_url('/course');
     $config['page_query_string'] = TRUE;
     $config['total_rows'] = $this->course_model->get_published_count();
-    $config['per_page'] = 4;
+    $config['per_page'] = 6;
   
     $config['full_tag_open'] = '<div class="pagination justify-content-center">';
     $config['full_tag_close'] = '</div>';
