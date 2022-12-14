@@ -10,7 +10,7 @@
        <span style="font-size:30px">Nama Training</span> <br/><br/>
        <span style="font-size:20px"></b></span> <br/>
        <span style="font-size:25px"><i>Conducted</i></span><br>
-      at Narademy's Head Office between November 11 - 15,2022
+      at Narademy's Head Office between November 11 - 15, 2022
       <span style="font-size:30px"></span><br><br><br>
       <img src="<?= base_url("assets/img/logo-narademy.png") ?>"/>
 </div>
