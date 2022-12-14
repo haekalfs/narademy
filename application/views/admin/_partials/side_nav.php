@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-						<div style="display: flex; gap: 0.8rem; margin:1rem 0;">
+						<div style="display: flex; gap: 0.8rem;">
 							<?php
 							$avatar = $current_user->avatar ?
 								base_url('upload/avatar/' . $current_user->avatar)

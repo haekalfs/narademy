@@ -15,7 +15,7 @@ class Home extends CI_Controller
         $config['base_url'] = site_url('home');
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->blog_model->get_published_count();
-        $config['per_page'] = 4;
+        $config['per_page'] = 3;
     
         $config['full_tag_open'] = '<div class="pagination">';
         $config['full_tag_close'] = '</div>';

@@ -3,43 +3,6 @@
 
 <head>
   <?php $this->load->view('admin/_partials/header.php') ?>
-  <style>      
-            * {
-            box-sizing: border-box;
-            }
-            /* Float four columns side by side */
-            .column {
-            float: left;
-            width: 25%;
-            padding: 0 10px;
-            }
-
-            /* Remove extra left and right margins, due to padding */
-            .row {margin: 0 -5px;}
-
-            /* Clear floats after the columns */
-            .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
-
-            /* Responsive columns */
-            @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-            }
-
-            /* Style the counter cards */
-            .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            background-color: #f1f1f1;
-            }
-        </style>
 </head>
 
 <body>
@@ -91,39 +54,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row"  style="font-family: poppins;">
-                            <div class="column">
-                                <img src="<?= base_url("assets/img/admin-bg01.png") ?>" alt="Avatar" style="width:100%">
-                                <div class="card">
-                                    <h4>What's Narademy?</h4>
-                                    <p>Narademy is website education. Narademy is not just about learning but it allows people to share their knowledge to the others, so they can grow together.</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Bar Chart Example
+                                    </div>
+                                    <div class="card-body"><iframe style="height:550px; width:100%; border: none;" src="https://databoks.katadata.co.id/datapublishembed/125606/dki-jakarta-miliki-1628-perusahaan-manufaktur-pada-2021"></iframe></div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
                             </div>
-
-                            <div class="column">
-                            <img src="<?= base_url("assets/img/admin-bg04.png") ?>" alt="Avatar" style="width:100%">
-                                <div class="card">
-                                <h3>Know Yourself</h3>
-                                <p>Don't aim to be understood by others before you understand yourself. People may never understand your intentions. You know them.</p><br>
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-pie me-1"></i>
+                                        Pie Chart Example
+                                    </div>
+                                    <div class="card-body"><iframe id="iframe-chart" style="height:550px; width:100%; border: none;" src="https://databoks.katadata.co.id/datapublishembed/146284/update-harga-emas-antam-naik-menjadi-rp-1013000-per-gram"></iframe></div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
                             </div>
-                            
-                            <div class="column">
-                            <img src="<?= base_url("assets/img/admin-bg06.png") ?>" alt="Avatar" style="width:100%">
-                                <div class="card">
-                                <h4>Pink Roses</h4>
-                                <p>If you are not enough for yourself you will never be enough for someone else.</p><br><br><br>
-                                </div>
-                            </div>
-                            
-                            <div class="column">
-                            <img src="<?= base_url("assets/img/admin-bg02.png") ?>" alt="Avatar" style="width:100%">
-                                <div class="card">
-                                <h3>Be True</h3>
-                                <p>If you don't stop judging yourself, putting yourself down, believing that this is as good as you can be, then you've closed doors for yourself before they even appear in front of you.</p>
-                                </div>
-                            </div>
-                        </div><br>
+                        </div>
                     </div>
                 </main>
       <?php $this->load->view('admin/_partials/footer.php') ?>

@@ -53,12 +53,12 @@
 									<td class="text-green">Published</td>
 									<?php endif ?>
 									<td style="width: 20%;">
-										<div>
-											<a href="<?= site_url('course/'.$course->slug) ?>" class="btn btn-primary"
+										<div >
+											<a style="font-size:small;" href="<?= site_url('course/'.$course->slug) ?>" class="btn btn-primary"
 												target="_blank" role="button">Preview</a>
-											<a href="<?= site_url('admin/post/edit/'.$course->id) ?>"
+											<a style="font-size:small;" href="<?= site_url('admin/post/edit/'.$course->id) ?>"
 												class="btn btn-warning" role="button">Edit</a>
-											<a href="#"
+											<a style="font-size:small;" href="#"
 												data-delete-url="<?= site_url('admin/post/delete/'.$course->id) ?>"
 												class="btn btn-danger" role="button"
 												onclick="deleteConfirm(this)">Delete</a>
@@ -71,7 +71,6 @@
 				</div>
 				</tbody>
 			</div>
-
 			<?php $this->load->view('admin/_partials/footer.php') ?>
 		</div>
 	</main>

@@ -54,11 +54,11 @@
 									<?php endif ?>
 									<td style="width: 20%;">
 										<div class="action">
-											<a href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary"
+											<a style="font-size:small;" href="<?= site_url('blog/'.$blog->slug) ?>" class="btn btn-primary"
 												target="_blank" role="button">Preview</a>
-											<a href="<?= site_url('admin/blog/edit/'.$blog->id) ?>"
+											<a style="font-size:small;" href="<?= site_url('admin/blog/edit/'.$blog->id) ?>"
 												class="btn btn-warning" role="button">Edit</a>
-											<a href="#"
+											<a style="font-size:small;" href="#"
 												data-delete-url="<?= site_url('admin/blog/delete/'.$blog->id) ?>"
 												class="btn btn-danger" role="button"
 												onclick="deleteConfirm(this)">Delete</a>
