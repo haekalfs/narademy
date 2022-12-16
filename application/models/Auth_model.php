@@ -25,6 +25,7 @@ class Auth_model extends CI_Model
 	{
 		$where = "email='$username' OR username = '$username' AND role = '1104'";
 		$this->db->where($where);
+		
 		$query = $this->db->get($this->_table);
 		$user = $query->row();
 
