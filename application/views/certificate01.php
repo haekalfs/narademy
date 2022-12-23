@@ -5,9 +5,9 @@
        <br><br><br>
        <span style="font-size:25px"><i>This is to certify that</i></span>
        <br><br>
-       <span style="font-size:40px"><b>Nama Peserta</b></span><br/><br/>
+       <span style="font-size:40px"><b><?php echo $this->session->userdata('Nama'); ?></b></span><br/><br/>
        <span style="font-size:25px"><i>has completed the course</i></span> <br/><br/>
-       <span style="font-size:30px">Nama Training</span> <br/><br/>
+       <span style="font-size:30px"><?php echo $this->session->userdata('courses'); ?></span> <br/><br/>
        <span style="font-size:20px"></b></span> <br/>
        <span style="font-size:25px"><i>Conducted</i></span><br>
       at Narademy's Head Office between November 11 - 15, 2022

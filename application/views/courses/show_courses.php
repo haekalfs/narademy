@@ -12,9 +12,10 @@
 	}
 	</style>
 </head>
-
+<?php 
+$this->session->set_userdata('courses' , $course->title ? html_escape($course->title) : "No Title");
+?>
 <body>
-
 	<?php $this->load->view('_partials/navbar.php'); ?>
 	<?php $this->load->view('_partials/breadcumbs.php'); ?>
 	<div class="container">

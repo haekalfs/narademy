@@ -29,6 +29,8 @@ class Auth_model extends CI_Model
 		$query = $this->db->get($this->_table);
 		$user = $query->row();
 
+		$dataSession = $query->row_array();
+
 		// cek apakah user sudah terdaftar?
 		if (!$user) {
 			return FALSE;
@@ -40,11 +42,12 @@ class Auth_model extends CI_Model
 		}
 
 		//bikin session
+		$this->session->set_userdata('Nama' , $dataSession['name']);
 		$this->session->set_userdata([self::SESSION_KEY => $user->id]);
 		$this->session->set_userdata('access','1');
 		$this->_update_last_login($user->id);
 
-		return $this->session->has_userdata(self::SESSION_KEY,'access');
+		return $this->session->has_userdata(self::SESSION_KEY,'access','Nama');
 	}
 
 	public function login_user($username, $password)
@@ -88,6 +91,7 @@ class Auth_model extends CI_Model
 	{
 		$this->session->unset_userdata(self::SESSION_KEY);
 		$this->session->unset_userdata('access');
+		$this->session->unset_userdata('courses');
 		return !$this->session->has_userdata(self::SESSION_KEY);
 	}
 
