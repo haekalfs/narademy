@@ -14,7 +14,7 @@
           <li><a class="nav-link scrollto" href="<?= site_url('blog') ?>">Blogs</a></li>
           <li><a class="nav-link scrollto" href="<?= site_url('contact') ?>">Contact</a></li>
           <?php if($this->session->userdata('access')=='1'):?>
-          <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Admin</span><i class="bi bi-person-circle"></i></a>
+          <li class="dropdown"><a href="#" class="getstarted scrollto"><span><?php echo $this->session->userdata('Nama'); ?></span><i class="bi bi-person-circle"></i></a>
             <ul>
               <li><a href="<?= site_url('admin') ?>">Go To Admin Page</a></li>
               <li><a href="<?= site_url('admin/setting') ?>">Settings</a></li>
@@ -24,7 +24,7 @@
           </li>
           <!-- Akses Buat Member -->
           <?php elseif($this->session->userdata('access')=='2'):?>
-            <li class="dropdown"><a href="#" class="getstarted scrollto"><span>Member</span><i class="bi bi-person-circle"></i></a>
+            <li class="dropdown"><a href="#" class="getstarted scrollto"><span><?php echo $this->session->userdata('Nama'); ?></span><i class="bi bi-person-circle"></i></a>
             <ul>
               <li><a href="#">My Certificate</a></li>
               <li><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Edit Profile</a></li>
@@ -33,7 +33,7 @@
             </ul>
           </li>
           <?php else:?>
-            <li><a class="getstarted scrollto" href="<?= site_url('admin') ?>">Join Us</a></li>
+            <li><a class="getstarted scrollto" href="<?= site_url('auth/login') ?>">Join Us</a></li>
           <?php endif;?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

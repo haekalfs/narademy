@@ -7,6 +7,7 @@ class Home extends CI_Controller
         parent::__construct();
         $this->load->model('feedback_model');
         $this->load->model('blog_model');
+        $this->load->model('auth_model');
     }
     public function index()
     {
@@ -28,6 +29,7 @@ class Home extends CI_Controller
         $data['meta'] = [
             'title' => 'Narademy',
         ];
+        $data['current_user'] = $this->auth_model->current_user();
         if(count($data['blogs']) > 0){
             $this->load->view('home', $data);
         } else {
